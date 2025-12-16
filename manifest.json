@@ -1,0 +1,16 @@
+{
+    "name": "Jafer Graphics Poster Intake",
+    "short_name": "PosterIntake",
+    "description": "Poster design intake form with local database",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6366f1",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

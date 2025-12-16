@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Jafer Graphics | Poster Design Intake</title>
+<link rel="stylesheet" href="assets/all.min.css">
+<link rel="stylesheet" href="assets/flatpickr.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.form-control.flatpickr-input{
+width:90%;
+}
+#required .form-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+gap: 6px;
+}
+
+@media (max-width: 768px) {
+#required .form-grid {
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+}
+#required .form-grid .form-group{
+border-right:1px solid var(--border);
+}
+.header-content img{
+width:32px;
+height:32px;
+border-radius: 50%;
+}
+</style>
+</head>
+<body class="system-theme">
+<div class="app-container">
+<!-- Fixed Header -->
+<header class="header">
+<div class="header-content">
+<div style="display: flex;align-items: center;column-gap: 10px;">
+<img src="assets/logo.png">
+<div class="logo">
+<div class="logo-main">Jafer Graphics</div>
+<div class="logo-sub">Poster Design Intake</div>
+</div>
+</div>
+<div class="header-controls">
+<div class="theme-switcher">
+<button class="theme-btn" data-theme="light" title="Light Mode">
+<i class="fas fa-sun"></i>
+</button>
+<button class="theme-btn" data-theme="dark" title="Dark Mode">
+<i class="fas fa-moon"></i>
+</button>
+<button class="theme-btn active" data-theme="system" title="System Theme">
+<i class="fas fa-desktop"></i>
+</button>
+</div>
+                </div>
+</div>
+</header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Tab Navigation -->
+            <nav class="tab-navigation">
+                <button class="tab-btn required-tab active" data-tab="required">
+                    <i class="fas fa-star"></i>
+                    <span>Required</span>
+                    <span class="tab-count">12</span>
+                </button>
+                <button class="tab-btn optional-tab" data-tab="optional">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Optional</span>
+                    <span class="tab-count">3</span>
+                </button>
+                <button class="tab-btn additional-tab" data-tab="additional">
+                    <i class="fas fa-sticky-note"></i>
+                    <span>Additional</span>
+                    <span class="tab-count">5</span>
+                </button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Required Tab -->
+                <div class="tab-pane active" id="required">
+                    <div class="form-container">
+                        <!-- Project Core Details -->
+<div class="form-section required">
+<div class="section-header">
+<div class="section-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <h3>Project Core Details</h3>
+                            </div>
+                            
+<div class="form-grid">
+<div class="form-group">
+<label class="required-field">Event/Project Name</label>
+                                    <input type="text" class="form-control truncate" id="projectName" placeholder="Summer Music Festival 2024">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Tagline or Slogan</label>
+                                    <input type="text" class="form-control truncate" id="tagline" placeholder="The Ultimate Summer Experience">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Date & Time</label>
+                                    <div class="datetime-group">
+                                        <input type="text" class="form-control" id="eventDate" placeholder="Select Date">
+                                        <input type="text" class="form-control" id="eventTime" placeholder="Select Time">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Venue or Virtual Link</label>
+                                    <input type="text" class="form-control truncate" id="venueLink" placeholder="Central Park or https://event.com/live">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Primary Goal</label>
+                                    <select class="form-control" id="primaryGoal">
+                                        <option value="">Select a goal</option>
+                                        <option value="sell_tickets">Sell Tickets</option>
+                                        <option value="drive_registrations">Drive Registrations</option>
+                                        <option value="build_awareness">Build Awareness</option>
+                                        <option value="product_launch">Product Launch</option>
+                                        <option value="brand_promotion">Brand Promotion</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Audience & Mood -->
+                        <div class="form-section required">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Audience & Design Mood</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="required-field">Target Audience</label>
+                                    <input type="text" class="form-control truncate" id="targetAudience" placeholder="Young professionals (25-40), Tech enthusiasts">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Desired Mood & Style</label>
+                                    <select class="form-control" id="designMood">
+                                        <option value="">Select mood</option>
+                                        <option value="elegant_formal">Elegant & Formal</option>
+                                        <option value="energetic_playful">Energetic & Playful</option>
+                                        <option value="modern_minimal">Modern & Minimal</option>
+                                        <option value="vintage_retro">Vintage & Retro</option>
+                                        <option value="bold_edgy">Bold & Edgy</option>
+                                        <option value="friendly_warm">Friendly & Warm</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Key Call-to-Action</label>
+                                    <input type="text" class="form-control truncate" id="ctaText" placeholder="Buy Now, Register Today, Learn More">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Brand Assets -->
+                        <div class="form-section required">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3>Brand Assets</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="required-field">Brand Color Codes</label>
+                                    <input type="text" class="form-control truncate" id="brandColors" placeholder="#6366f1 (Primary), #8b5cf6 (Secondary)">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Primary Logo</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="logoFile" accept=".png,.jpg,.jpeg,.svg,.ai,.eps">
+                                        <div class="file-upload-label">
+                                            <i class="fas fa-upload"></i>
+                                            <span>Upload Logo</span>
+                                        </div>
+                                    </div>
+                                    <div class="file-list truncate" id="logoFileList">No file selected</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Brand Fonts</label>
+                                    <input type="text" class="form-control truncate" id="brandFonts" placeholder="Inter (Primary), Montserrat (Secondary)">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Technical & Logistics -->
+                        <div class="form-section required">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <h3>Technical & Logistics</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="required-field">Poster Dimensions</label>
+                                    <select class="form-control" id="posterDimensions">
+                                        <option value="">Select size</option>
+                                        <option value="18x24">18x24 inches (Standard Print)</option>
+                                        <option value="24x36">24x36 inches (Large Print)</option>
+                                        <option value="1080x1350">1080x1350px (Instagram)</option>
+                                        <option value="1200x628">1200x628px (Facebook)</option>
+                                        <option value="custom">Custom Size</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Required File Formats</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="formatPDF" value="PDF" checked>
+                                            <label for="formatPDF">PDF</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="formatJPG" value="JPG" checked>
+                                            <label for="formatJPG">JPG</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="formatPNG" value="PNG">
+                                            <label for="formatPNG">PNG</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Final Deadline</label>
+                                    <input type="text" class="form-control" id="finalDeadline" placeholder="Select deadline date">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="required-field">Usage Platforms</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="platformSocial" value="Social Media" checked>
+                                            <label for="platformSocial">Social Media</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="platformPrint" value="Print">
+                                            <label for="platformPrint">Print</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="platformWebsite" value="Website">
+                                            <label for="platformWebsite">Website</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Optional Tab -->
+                <div class="tab-pane" id="optional">
+                    <div class="form-container">
+                        <!-- Optional Information -->
+                        <div class="form-section optional">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <h3>Optional Information</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Key Hashtags & Social Handles</label>
+                                    <input type="text" class="form-control truncate" id="hashtags" placeholder="#Event2024 @YourBrand">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>QR Code Destination URL</label>
+                                    <input type="url" class="form-control truncate" id="qrCodeUrl" placeholder="https://yourwebsite.com/register">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Printing Responsibility</label>
+                                    <select class="form-control" id="printingResponsibility">
+                                        <option value="">Select option</option>
+                                        <option value="designer">Designer handles printing</option>
+                                        <option value="client">Client handles printing</option>
+                                        <option value="tbd">To be determined</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Tab -->
+                <div class="tab-pane" id="additional">
+                    <div class="form-container">
+                        <!-- Additional Details -->
+                        <div class="form-section additional">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                                <h3>Additional Details</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Sponsor/Partner Logos</label>
+                                    <div class="file-upload">
+                                        <input type="file" id="sponsorLogos" accept=".png,.jpg,.jpeg,.svg" multiple>
+                                        <div class="file-upload-label">
+                                            <i class="fas fa-images"></i>
+                                            <span>Upload Sponsor Logos</span>
+                                        </div>
+                                    </div>
+                                    <div class="file-list truncate" id="sponsorFileList">No files selected</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Reference Images/Inspiration Links</label>
+                                    <textarea class="form-control" id="inspirationLinks" placeholder="Paste links to reference images or Pinterest boards..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Event Type</label>
+                                    <select class="form-control" id="eventType">
+                                        <option value="">Select type</option>
+                                        <option value="concert">Concert / Music Festival</option>
+                                        <option value="conference">Conference / Seminar</option>
+                                        <option value="workshop">Workshop / Training</option>
+                                        <option value="product_launch">Product Launch</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Budget Range</label>
+                                    <input type="text" class="form-control truncate" id="budgetRange" placeholder="e.g., $500 - $2000">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Review & Approval -->
+                        <div class="form-section additional">
+                            <div class="section-header">
+                                <div class="section-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>Review & Approval</h3>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Main Contact Person</label>
+                                    <input type="text" class="form-control truncate" id="contactPerson" placeholder="Name, Email, Phone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Revision Rounds Included</label>
+                                    <select class="form-control" id="revisionRounds">
+                                        <option value="1">1 Round</option>
+                                        <option value="2" selected>2 Rounds</option>
+                                        <option value="3">3 Rounds</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Fixed Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="progress-info">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span id="progressText">0%</span>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <button class="btn btn-outline" id="clearBtn">
+                    <i class="fas fa-eraser"></i> Clear
+                </button>
+                <button class="btn btn-primary" id="previewBtn">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+<div class="modal-header">
+<h2><i class="fas fa-file-alt"></i> Poster Design Brief</h2>
+<button class="btn btn-primary" id="screenshotBtn">
+<i class="fas fa-camera"></i> Screenshot
+</button>
+<button class="close-modal" id="closeModal">
+<i class="fas fa-times"></i>
+</button>
+</div>
+<div class="modal-body" id="modalBody">
+<!-- Preview content will be inserted here -->
+</div>
+<div class="modal-actions">
+<button class="btn btn-outline" id="closePreviewBtn">
+<i class="fas fa-times"></i> Close
+</button>
+<button class="btn btn-primary" id="screenshotBtn">
+<i class="fas fa-camera"></i> Screenshot
+</button>
+</div>
+</div>
+</div>
+
+<!-- Add toast container to index.html before closing body -->
+<div id="toastContainer" class="toast-container"></div>
+
+<!-- Compact Splash Screen -->
+<div id="splashScreen" class="splash-screen">
+    <div class="splash-content">
+        <div class="splash-header">
+            <img src="assets/logo.png" alt="Logo" class="splash-logo">
+            <h1>Jafer Graphics</h1>
+            <h2>Poster Design Intake Form</h2>
+        </div>
+        
+        <div class="splash-instructions">
+            <div class="instruction-step">
+                <div class="step-icon">1</div>
+                <div class="step-content">
+                    <h3>Fill the Form</h3>
+                    <p>Complete all required fields in three tabs.</p>
+                </div>
+            </div>
+            
+            <div class="instruction-step">
+                <div class="step-icon">2</div>
+                <div class="step-content">
+                    <h3>Click Preview</h3>
+                    <p>Generate your design brief anytime.</p>
+                </div>
+            </div>
+            
+            <div class="instruction-step">
+                <div class="step-icon">3</div>
+                <div class="step-content">
+                    <h3>Screenshot & Send</h3>
+                    <p>Send preview to design team.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="splash-tip">
+            <i class="fas fa-lightbulb"></i>
+            <span>Preview works even with incomplete forms!</span>
+        </div>
+        
+        <button id="startBtn" class="btn btn-primary splash-btn">
+            <i class="fas fa-rocket"></i> Get Started Now
+        </button>
+        
+        <div class="splash-footer">
+            <p>Auto-dismiss in <span id="countdown">5</span> seconds</p>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/flatpickr.js"></script>
+<script src="assets/script.js"></script>
+
+</body>
+</html>
